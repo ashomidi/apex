@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ApexCharts</title>
+    <link rel="stylesheet" href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css" />
+    <style>
+        body {
+            background-color: #252525;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+
+<body>
+    <div class="container mx-auto max-w-3xl">
+        <div class="relative mx-auto rounded-xl text-gray-700 shadow-md">
+            <div class="flex items-center justify-between px-4 py-8">
+                <h2
+                    class="font-sans font-semibold text-gray-300 leading-[1.3]">
+                    BTCUSDT
+                </h2>
+                <div class="flex items-center">
+                    <h4
+                        class="font-sans font-normal text-gray-600 text-sm">
+                        Each 4 hours
+                    </h4>
+                </div>
+            </div>
+            <div id="chart"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
