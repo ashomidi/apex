@@ -2,8 +2,10 @@ window.onload = function () {
     fetchDataWithInterval("4h");
 };
 
+const corsProxyUrl = 'https://cors-anywhere.herokuapp.com/';
+
 function fetchDataWithInterval(interval) {
-    const apiUrl = `https://api.mexc.com/api/v3/klines?symbol=BTCUSDT&interval=${interval}&limit=8`;
+    const apiUrl = `${corsProxyUrl}https://api.mexc.com/api/v3/klines?symbol=BTCUSDT&interval=${interval}&limit=8`;
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
